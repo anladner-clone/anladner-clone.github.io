@@ -1,169 +1,144 @@
-* {
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #0d0d0d;
+    color: #fff;
+}
+
+nav {
+    background-color: #121212;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #111;
-    color: #fff;
-    line-height: 1.6;
+nav ul li {
+    margin: 0 15px;
 }
 
-header {
-    background: #222;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-}
-
-.social-icons a {
-    color: #fff;
+nav ul li a {
+    color: #0082F4;
     text-decoration: none;
-    margin: 0 10px;
+    font-size: 18px;
 }
 
-.social-icons a:hover {
+nav ul li a:hover {
     text-decoration: underline;
 }
 
-.intro {
+/* Header */
+header {
     text-align: center;
-    padding: 100px 20px;
-    background: #000;
+    padding: 100px 20px 50px;
+    background-color: #1c1c1c;
 }
 
-.intro h1 {
-    font-size: 48px;
-    color: #00aaff;
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #0082F4;
 }
 
-.intro h1 span {
-    color: #0077cc;
-}
-
-.intro p {
-    font-size: 24px;
-    margin-top: 10px;
-}
-
-.buttons a {
-    display: inline-block;
-    margin: 20px 10px;
-    padding: 10px 20px;
-    color: #fff;
-    background: #0077cc;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.about-section, .projects-section, .contact-section {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.about-section h2, .projects-section h2, .contact-section h2 {
+h1 {
     font-size: 36px;
-    margin-bottom: 20px;
-    color: #00aaff;
+    margin: 20px 0;
 }
 
-.about-content {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 30px;
+h1 .name {
+    color: #0082F4;
 }
 
-.skills, .bio {
-    width: 45%;
+h1 span {
+    color: #fff;
+}
+
+p {
+    font-size: 18px;
+}
+
+.header-links a {
+    color: #0082F4;
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+}
+
+.header-links a:hover {
+    text-decoration: underline;
+}
+
+/* About Me */
+#about {
+    padding: 50px 20px;
+    background-color: #121212;
+    text-align: center;
 }
 
 .skills ul {
     list-style-type: none;
-    font-size: 18px;
+    padding: 0;
 }
 
 .skills ul li {
-    margin: 10px 0;
-    color: #00aaff;
-}
-
-.bio a {
     display: inline-block;
-    margin-top: 20px;
+    background-color: #1c1c1c;
+    margin: 5px;
     padding: 10px 20px;
-    color: #fff;
-    background: #0077cc;
-    text-decoration: none;
     border-radius: 5px;
+    border: 2px solid #0082F4;
 }
 
-.projects {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 30px;
+/* Projects */
+#projects {
+    padding: 50px 20px;
+    background-color: #1c1c1c;
 }
 
 .project {
-    width: 45%;
-    text-align: left;
+    margin-bottom: 30px;
 }
 
-.project h3 {
-    color: #0077cc;
-    margin-bottom: 10px;
+/* Contact */
+#contact {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #121212;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
+    max-width: 600px;
     margin: 0 auto;
 }
 
-form label {
-    margin-top: 10px;
-    margin-bottom: 5px;
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #0082F4;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+form input[type="submit"] {
+    background-color: #0082F4;
+    color: #fff;
+    cursor: pointer;
     font-size: 18px;
 }
 
-form input, form textarea {
-    padding: 10px;
-    font-size: 16px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: none;
-}
-
-form button {
-    padding: 10px;
-    background-color: #00aaff;
-    color: #fff;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-}
-
-footer {
-    background: #222;
-    padding: 20px;
-    text-align: center;
-}
-
-footer p {
-    color: #fff;
+form input[type="submit"]:hover {
+    background-color: #006bbd;
 }
