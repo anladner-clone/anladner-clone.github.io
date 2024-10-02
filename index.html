@@ -2,93 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio de Ariel Ladner</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Nav -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
     <header>
-        <nav>
-            <div class="logo">
-                <img src="avatar.jpg" alt="Ariel Ladner Avatar" class="avatar">
-                <span>ARIEL LADNER</span>
+        <div class="header-content">
+            <img src="avatar.jpg" alt="Ariel Ladner" class="avatar">
+            <h1>Hello, I'm <span class="name">Ariel Ladner</span></h1>
+            <p>Systems Engineering student with an interest in software development.</p>
+            <div class="header-links">
+                <a href="#projects">See my projects</a>
+                <a href="#about">Learn more</a>
             </div>
-            <div class="social-icons">
-                <a href="https://github.com" target="_blank">GitHub</a>
-                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-                <a href="#">Resume</a>
-            </div>
-        </nav>
+        </div>
     </header>
 
-    <section class="intro">
-        <h1>Hello, I'm <span>Ariel Ladner</span></h1>
-        <p>Systems Engineering student with an interest in software development.</p>
-        <div class="buttons">
-            <a href="#projects">see my projects</a>
-            <a href="#about">learn more</a>
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Learn more about who I am, my skills, and my short- and long-term goals, particularly in programming and technology.</p>
+        <div class="skills">
+            <h3>My Skills</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>React</li>
+                <li>Python</li>
+                <li>Git</li>
+                <li>GitHub</li>
+            </ul>
         </div>
     </section>
 
-    <section id="about" class="about-section">
-        <h2>ABOUT ME</h2>
-        <p>Learn more about who I am, my skills, and my current path in programming and technology.</p>
-        <div class="about-content">
-            <div class="skills">
-                <h3>My Skills</h3>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
-                    <li>React</li>
-                    <li>Python</li>
-                    <li>GIT</li>
-                    <li>GitHub</li>
-                </ul>
-            </div>
-            <div class="bio">
-                <h3>Discover more about me!</h3>
-                <p>I'm a Systems Engineering student with a keen interest in software development. Check out my projects to see what I've been working on.</p>
-                <p>I enjoy solving problems and projects related to the database, development, and connecting with the community. Feel free to contact me if you like my work.</p>
-                <p>I'm open to job opportunities where I can contribute, learn, and grow. If you have an opportunity that matches my skills and experience, don't hesitate to contact me.</p>
-                <a href="#contact" class="contact-btn">contact</a>
-            </div>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1: Software Administrativo</h3>
+            <p>Creación de un software administrativo diseñado para facilitar la gestión de diversas tareas según las necesidades de los usuarios. Este sistema permite almacenar información en bases de datos y garantiza un acceso seguro mediante un sistema de inicio de sesión. Dentro del programa, los "proyectos" se refieren a las diferentes áreas de administración que un usuario puede manejar.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2: Programa de Votación Electrónica</h3>
+            <p>Colaboré con un compañero de colegio en el desarrollo de un programa de votación electrónica para una institución educativa. Utilizamos Python para la implementación, donde mi responsabilidad se centró en la programación y la conexión de datos a una base de datos, mientras que mi compañero se encargó del diseño de la aplicación.</p>
         </div>
     </section>
 
-    <section id="projects" class="projects-section">
-        <h2>My Projects</h2>
-        <div class="projects">
-            <div class="project">
-                <h3>Project 1: Administrative Software</h3>
-                <p>Creación de un software administrativo diseñado para facilitar la gestión de diversas tareas según las necesidades de los usuarios. Este sistema permite almacenar información en bases de datos y garantiza un acceso seguro mediante un sistema de inicio de sesión.</p>
-                <p>Dentro del programa, los "proyectos" se refieren a las diferentes áreas de administración que un usuario puede manejar.</p>
-            </div>
-            <div class="project">
-                <h3>Project 2: Electronic Voting System</h3>
-                <p>Colaboré con un compañero de colegio en el desarrollo de un programa de votación electrónica para una institución educativa. Utilizamos Python para la implementación, donde mi responsabilidad se centró en la programación y la conexión de datos a una base de datos, mientras que mi compañero se encargó del diseño de la aplicación.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact-section">
+    <!-- Contact Section -->
+    <section id="contact">
         <h2>Contact</h2>
-        <p>Got a question or want to learn more? Fill out the form below, and I'll get back to you!</p>
+        <p>Get a question or want to learn more? Fill out the form below, and I'll get back to you as soon as possible.</p>
         <form action="mailto:anladner.work@gmail.com" method="post" enctype="text/plain">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
+
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
+
             <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-            <button type="submit">Send Message</button>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" value="Send">
         </form>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Ariel Ladner. All Rights Reserved.</p>
-    </footer>
 </body>
 </html>
