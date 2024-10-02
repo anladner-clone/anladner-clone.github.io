@@ -6,41 +6,16 @@ body {
     color: #fff;
 }
 
-nav {
-    background-color: #121212;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #0082F4;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
 /* Header */
 header {
     text-align: center;
     padding: 100px 20px 50px;
     background-color: #1c1c1c;
+}
+
+.avatar-container {
+    display: inline-block;
+    position: relative;
 }
 
 .avatar {
@@ -50,23 +25,56 @@ header {
     border: 5px solid #0082F4;
 }
 
+.social-icons {
+    position: absolute;
+    top: 50%;
+    left: 170px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.social-icons a {
+    color: #0082F4;
+    font-size: 24px;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #006bbd;
+}
+
+/* Typing Animation */
 h1 {
     font-size: 36px;
     margin: 20px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    width: 24ch;
 }
 
-h1 .name {
-    color: #0082F4;
+.cursor {
+    display: inline-block;
+    background-color: #0082F4;
+    animation: blink 0.7s steps(1) infinite;
 }
 
-h1 span {
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.typed-text {
+    font-family: 'Courier New', monospace;
     color: #fff;
+    display: inline-block;
 }
 
-p {
-    font-size: 18px;
-}
-
+/* Header Links */
 .header-links a {
     color: #0082F4;
     text-decoration: none;
